@@ -1,0 +1,47 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="F:\Work\sys_lib\"
+ProjectType=Library
+CPUFamily=TMS320C67XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="src\DS18B20.c"
+Source="src\DSPexPC.c"
+Source="src\flash.c"
+Source="src\fpga_ad7734.c"
+Source="src\fpga_ad7894.c"
+Source="src\fpga_ad976.c"
+Source="src\fpga_ads1278.c"
+Source="src\fpga_motor.c"
+Source="src\fpga_spi.c"
+Source="src\fpga_uart.c"
+Source="src\general.c"
+Source="src\omapl137_gpio.c"
+Source="src\omapl137_psc.c"
+Source="src\timeout.c"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o".\Debug\sys_lib.lib"
+
+["Archiver" Settings: "Release"]
+Options=-r -o".\Release\sys_lib.lib"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"F:\Work\sys_lib\Debug" -i"\Work\sys_lib\inc" -d"_DEBUG" -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"F:\Work\sys_lib\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+

@@ -1,0 +1,9 @@
+----------------------------  sys_lib.pjt - Debug  ----------------------------
+[flash.c] "D:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -q -fr"F:/Work/sys_lib/FLASH_LIB/Debug" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "flash.c"
+
+[Archiving...] "D:\CCStudio_v3.3\C6000\cgtools\bin\ar6x" @"Debug.lkf"
+  ==>  new archive 'F:\Work\sys_lib\FLASH_LIB\Debug\sys_lib.lib'
+  ==>  building archive 'F:\Work\sys_lib\FLASH_LIB\Debug\sys_lib.lib'
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

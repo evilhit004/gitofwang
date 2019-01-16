@@ -1,0 +1,35 @@
+--------------------------  TrailBlazer.pjt - Debug  --------------------------
+[Atmel_SPI_Flash.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "Atmel_SPI_Flash.c"
+
+[GPS_DVL.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "GPS_DVL.c"
+"GPS_DVL.c", line 111: warning: variable "ucChar" was set but never used
+"GPS_DVL.c", line 691: warning: variable "i" was declared but never referenced
+"GPS_DVL.c", line 1387: warning: variable "iNum0_fifoground" is used before its value is set
+"GPS_DVL.c", line 1595: warning: function declared implicitly
+"GPS_DVL.c", line 1893: warning: last line of file ends without a newline
+"GPS_DVL.c", line 1369: warning: variable "cecfposstd" was set but never used
+"GPS_DVL.c", line 1373: warning: variable "temp" was declared but never referenced
+"GPS_DVL.c", line 1374: warning: variable "iFlagtemp_ground" was set but never used
+"GPS_DVL.c", line 1377: warning: variable "g_wGPS_State" was declared but never referenced
+"GPS_DVL.c", line 25: warning: variable "ucGps_Sec" was set but never used
+"GPS_DVL.c", line 72: warning: variable "ucCnt_GpsDelayValid" was declared but never referenced
+
+[main.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "main.c"
+"main.c", line 335: warning: variable "j" was declared but never referenced
+"main.c", line 339: warning: variable "test" was declared but never referenced
+"main.c", line 434: warning: last line of file ends without a newline
+"main.c", line 416: warning: variable "i" was declared but never referenced
+
+[omapl137.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "omapl137.c"
+
+[omapl137_gpio.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "omapl137_gpio.c"
+
+[SPI.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "SPI.c"
+
+[vecs.asm] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"./Debug/" -i"/Work/sys_lib/inc" -d"_DEBUG" -mv6400+ -@"Debug.lkf" "vecs.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 15 Warnings, 0 Remarks.

@@ -1,0 +1,43 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\project\DSP\M-PNT20180720\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="Atmel_SPI_Flash.c"
+Source="C:\CCStudio_v3.3\C6000\cgtools\lib\rts64plus.lib"
+Source="GPS_DVL.c"
+Source="main.c"
+Source="omapl137.c"
+Source="omapl137_gpio.c"
+Source="SPI.c"
+Source="sys_lib64.lib"
+Source="vecs.asm"
+Source="link2.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr".\Debug\" -i"\Work\sys_lib\inc" -d"_DEBUG" -mv6400+
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -mv6700
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\TrailBlazer.map" -o".\Debug\TrailBlazer.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\TrailBlazer.map" -o".\Release\TrailBlazer.out" -w -x
+
+["link2.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["link2.cmd" Settings: "Release"]
+LinkOrder=1
+

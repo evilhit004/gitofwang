@@ -1,0 +1,32 @@
+; Created by AISgen for D800K005 v0.8.2.0
+
+[General]
+BootMode = NONE
+crcCheckType = NO_CRC
+
+[AIS_SeqReadEnable]
+
+[PLLANDCLOCKCONFIG]
+PLLCFG0 = 0x11000202
+PLLCFG1 = 0x00050207
+PERIPHCLKCFG = 0x00000037
+
+
+
+-ini AISgen.ini -o "E:\M-PNTV1.0.BIN" "D:\work\yl\M-PNT\project\DSP\M-PNT20180720\Debug\TrailBlazer.out"
+
+-----------------------------------------------------
+   TI AIS Hex File Generator for OMAP-L137
+   (C) 2012, Texas Instruments, Inc.
+   Ver. 1.27
+-----------------------------------------------------
+
+
+Begining the AIS file generation.
+AIS file being generated for bootmode: NONE.
+Parsing the input object file, D:\work\yl\M-PNT\project\DSP\M-PNT20180720\Debug\TrailBlazer.out.
+AIS file generation was successful.
+Wrote 22612 bytes to file E:\M-PNTV1.0.BIN.
+Conversion is complete.
+
+

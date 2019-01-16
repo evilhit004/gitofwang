@@ -1,0 +1,693 @@
+******************************************************************************
+          TMS320C6x COFF Linker PC v6.0.8                      
+******************************************************************************
+>> Linked Wed Jan 02 10:43:00 2019
+
+OUTPUT FILE NAME:   <./Debug/TrailBlazer.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 118118c0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  VECS                  11803c00   00000400  00000200  00000200  RWIX
+  DSPRAM                11804000   0003bc00  0000f88c  0002c374  RWIX
+  SHAREDRAM             80000000   00020000  00000000  00020000  RWIX
+  SDRAM                 c0000000   20000000  00000000  20000000  RWIX
+  ARMRAM                ffff0000   00002000  00000000  00002000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.sysmem    0    80000000    00000000     UNINITIALIZED
+
+.data      0    00000000    00000000     UNINITIALIZED
+
+.vecs      0    11803c00    00000200     
+                  11803c00    00000200     vecs.obj (.vecs)
+
+.cio       0    11804000    00000000     UNINITIALIZED
+
+.text      0    11804000    0000dca0     
+                  11804000    00005e40     GPS_DVL.obj (.text)
+                  11809e40    000010a0     sys_lib64.lib : DSPexPC.obj (.text)
+                  1180aee0    00000a60     main.obj (.text)
+                  1180b940    00000940     Atmel_SPI_Flash.obj (.text)
+                  1180c280    000008e0     SPI.obj (.text)
+                  1180cb60    000007a0     omapl137.obj (.text)
+                  1180d300    00000560     rts64plus.lib : strtod.obj (.text:_strtod)
+                  1180d860    000004c0     sys_lib64.lib : flash.obj (.text)
+                  1180dd20    000003c0     rts64plus.lib : cos.obj (.text:_cos)
+                  1180e0e0    00000360     sys_lib64.lib : omapl137_psc.obj (.text)
+                  1180e440    00000360     rts64plus.lib : fmod.obj (.text:_fmod)
+                  1180e7a0    00000360                   : sin.obj (.text:_sin)
+                  1180eb00    00000320     sys_lib64.lib : fpga_uart.obj (.text)
+                  1180ee20    000002c0     rts64plus.lib : atan.obj (.text:_atan)
+                  1180f0e0    00000240                   : frcdivd.obj (.text:__frcdivd)
+                  1180f320    00000200                   : frcaddd.obj (.text:__frcaddd)
+                  1180f520    00000200                   : sqrt.obj (.text:_sqrt)
+                  1180f720    000001e0                   : ldexp.obj (.text:_ldexp)
+                  1180f900    000001c0                   : divd.obj (.text:__divd)
+                  1180fac0    000001a0                   : imath40.obj (.text:__divul)
+                  1180fc60    000001a0                   : mpyd.obj (.text:__mpyd)
+                  1180fe00    000001a0                   : frexp.obj (.text:_frexp)
+                  1180ffa0    00000180                   : addf.obj (.text:__addf)
+                  11810120    00000180                   : atan2.obj (.text:_atan2)
+                  118102a0    00000160                   : addd.obj (.text:__addd)
+                  11810400    00000140     omapl137_gpio.obj (.text)
+                  11810540    00000140     rts64plus.lib : divf.obj (.text:__divf)
+                  11810680    00000140                   : mpyf.obj (.text:__mpyf)
+                  118107c0    00000100                   : frcdivf.obj (.text:__frcdivf)
+                  118108c0    00000100                   : frcmpyd.obj (.text:__frcmpyd)
+                  118109c0    00000100                   : round.obj (.text:__round)
+                  11810ac0    00000100                   : atoi.obj (.text:_atoi)
+                  11810bc0    00000100                   : atol.obj (.text:_atol)
+                  11810cc0    00000100                   : exit.obj (.text:_exit)
+                  11810dc0    000000e0                   : autoinit.obj (.text:__auto_init)
+                  11810ea0    000000e0                   : divi.obj (.text:__divi)
+                  11810f80    000000e0                   : memset.obj (.text:_memset)
+                  11811060    000000c0     sys_lib64.lib : timeout.obj (.text)
+                  11811120    000000c0     rts64plus.lib : modf.obj (.text:_modf)
+                  118111e0    000000a0                   : cvtdf.obj (.text:__cvtdf)
+                  11811280    000000a0                   : imath40.obj (.text:__divli)
+                  11811320    000000a0                   : fixdu.obj (.text:__fixdu)
+                  118113c0    000000a0                   : fixfu.obj (.text:__fixfu)
+                  11811460    000000a0                   : memcpy64.obj (.text:_memcpy)
+                  11811500    000000a0                   : renormd.obj (.text:_renormd)
+                  118115a0    00000080                   : cmpd.obj (.text:__cmpd)
+                  11811620    00000080                   : fixdi.obj (.text:__fixdi)
+                  118116a0    00000080                   : fixfi.obj (.text:__fixfi)
+                  11811720    00000080                   : fltlif.obj (.text:__fltlif)
+                  118117a0    00000060                   : cvtfd.obj (.text:__cvtfd)
+                  11811800    00000060                   : fltid.obj (.text:__fltid)
+                  11811860    00000060                   : fltif.obj (.text:__fltif)
+                  118118c0    00000060                   : boot.obj (.text:_c_int00)
+                  11811920    00000060                   : ceil.obj (.text:_ceil)
+                  11811980    00000040                   : args_main.obj (.text:__args_main)
+                  118119c0    00000040                   : fltud.obj (.text:__fltud)
+                  11811a00    00000040                   : fltuf.obj (.text:__fltuf)
+                  11811a40    00000040                   : frcmpyf.obj (.text:__frcmpyf)
+                  11811a80    00000040                   : negd.obj (.text:__negd)
+                  11811ac0    00000040                   : negf.obj (.text:__negf)
+                  11811b00    00000040                   : imath40.obj (.text:__remli)
+                  11811b40    00000040                   : imath40.obj (.text:__remul)
+                  11811b80    00000040                   : subd.obj (.text:__subd)
+                  11811bc0    00000040                   : subf.obj (.text:__subf)
+                  11811c00    00000020     vecs.obj (.text)
+                  11811c20    00000020     rts64plus.lib : _lock.obj (.text:__nop)
+                  11811c40    00000020                   : trunc.obj (.text:__trunc)
+                  11811c60    00000020                   : exit.obj (.text:_abort)
+                  11811c80    00000020                   : atof.obj (.text:_atof)
+
+.far       0    11811ca0    000008ac     UNINITIALIZED
+                  11811ca0    00000470     main.obj (.far)
+                  11812110    00000270     GPS_DVL.obj (.far)
+                  11812380    00000090     rts64plus.lib : exit.obj (.far)
+                  11812410    00000060                   : atan.obj (.far)
+                  11812470    00000044     sys_lib64.lib : DSPexPC.obj (.far)
+                  118124b4    00000004     rts64plus.lib : errno.obj (.far)
+                  118124b8    00000040                   : sin.obj (.far)
+                  118124f8    00000040                   : cos.obj (.far)
+                  11812538    00000008                   : _lock.obj (.far)
+                  11812540    00000005     sys_lib64.lib : flash.obj (.far)
+                  11812548    00000004     Atmel_SPI_Flash.obj (.far)
+
+.stack     0    11812550    00000800     UNINITIALIZED
+                  11812550    00000008     rts64plus.lib : boot.obj (.stack)
+
+.cinit     0    11812d50    0000062c     
+                  11812d50    0000022c     main.obj (.cinit)
+                  11812f7c    00000004     --HOLE-- [fill = 0]
+                  11812f80    000001f0     GPS_DVL.obj (.cinit)
+                  11813170    00000070     rts64plus.lib : atan.obj (.cinit)
+                  118131e0    00000054     sys_lib64.lib : DSPexPC.obj (.cinit)
+                  11813234    00000004     --HOLE-- [fill = 0]
+                  11813238    00000048     rts64plus.lib : cos.obj (.cinit)
+                  11813280    00000048                   : sin.obj (.cinit)
+                  118132c8    0000002c                   : exit.obj (.cinit)
+                  118132f4    00000004     --HOLE-- [fill = 0]
+                  118132f8    0000002c     Atmel_SPI_Flash.obj (.cinit)
+                  11813324    00000004     --HOLE-- [fill = 0]
+                  11813328    0000001c     rts64plus.lib : _lock.obj (.cinit)
+                  11813344    00000004     --HOLE-- [fill = 0]
+                  11813348    0000000d     sys_lib64.lib : flash.obj (.cinit)
+                  11813355    00000003     --HOLE-- [fill = 0]
+                  11813358    0000000c     rts64plus.lib : errno.obj (.cinit)
+                  11813364    00000004     --HOLE-- [fill = 0]
+                  11813368    0000000c     SPI.obj (.cinit)
+                  11813374    00000008     --HOLE-- [fill = 0]
+
+.const     0    11813380    0000022c     
+                  11813380    00000101     rts64plus.lib : ctype.obj (.const)
+                  11813481    00000007     --HOLE-- [fill = 0]
+                  11813488    00000098                   : strtod.obj (.const)
+                  11813520    00000030     GPS_DVL.obj (.const)
+                  11813550    0000002f     SPI.obj (.const)
+                  1181357f    00000001     --HOLE-- [fill = 0]
+                  11813580    00000014     sys_lib64.lib : flash.obj (.const)
+                  11813594    00000004     --HOLE-- [fill = 0]
+                  11813598    0000000c     Atmel_SPI_Flash.obj (.const)
+                  118135a4    00000004     --HOLE-- [fill = 0]
+                  118135a8    00000004     main.obj (.const)
+
+.switch    0    118135ac    00000224     
+                  118135ac    000001b8     GPS_DVL.obj (.switch)
+                  11813764    0000005c     sys_lib64.lib : DSPexPC.obj (.switch)
+                  118137c0    00000010     rts64plus.lib : frcdivd.obj (.switch)
+
+.bss       0    118137d0    000000c4     UNINITIALIZED
+                  118137d0    0000005a     GPS_DVL.obj (.bss)
+                  1181382c    00000050     main.obj (.bss)
+                  1181387c    0000000c     Atmel_SPI_Flash.obj (.bss)
+                  11813888    00000008     sys_lib64.lib : DSPexPC.obj (.bss)
+                  11813890    00000004     SPI.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+118137d0   $bss
+118137d0   .bss
+00000000   .data
+11804000   .text
+11811c60   C$$EXIT
+1180c140   _Atmel_Erase_Once
+1180be0c   _Atmel_GlobalUnprotect
+1180c20c   _Atmel_Muti4K_Erase
+1180c0c8   _Atmel_Read
+1180bf30   _Atmel_Write
+1180bdf4   _Atmel_Write_Wnable
+11806548   _CRC32Value
+118065c8   _CalculateBlockCRC32
+11812080   _DRamFConData
+11810400   _EVMOMAPL137_GPIO_setDirection
+11810490   _EVMOMAPL137_GPIO_setOutput
+1180a5a0   _Execute_DownLoad
+1180a370   _Execute_UpLoad
+1180bc2c   _FLASHSpiInit
+1180776c   _GPS_Course
+11811fb8   _GpsDat
+11807074   _Gps_pos_modify
+11811f88   _IMUData
+11806670   _Init_DvlCom
+11804000   _Init_GpsCom
+1180d2c0   _OMAPL137_DSPINT_CLOSEALL
+1180d298   _OMAPL137_DSPINT_OPENALL
+1180d064   _OMAPL137_DSPINT_init
+1180cdb4   _OMAPL137_EMIFA_init
+1180cb8c   _OMAPL137_GPIO_init
+1180cde4   _OMAPL137_PLL_init
+1180d2ec   _OMAPL137_PPSINT_CLOSE
+1180d2d8   _OMAPL137_PPSINT_OPEN
+1180cef4   _OMAPL137_PSC_init
+1180cc94   _OMAPL137_SYSCFG_init
+1180d1c8   _OMAPL137_TIMER_init
+11813868   _P1
+1181386c   _P3
+11813870   _P5
+1180e1b4   _PSC0_lPSC_disable
+1180e0e0   _PSC0_lPSC_enable
+1180e364   _PSC1_lPSC_disable
+1180e28c   _PSC1_lPSC_enable
+118082d4   _ReadGnssData
+11806694   _Read_DVL
+11804fa8   _Read_Gps_BESTB
+11804078   _Read_Gps_PASHR
+11805884   _Read_Gps_WRJ
+11808030   _Speed_XYZ_to_BLH
+1180c334   _SpiInit
+1180eb84   _UART_FIFOCLR
+1180eb00   _UART_init
+118137dc   _UTC
+11807ac8   _XYZ_to_BLH
+00000800   __STACK_SIZE
+ffffffff   ___binit__
+118137d0   ___bss__
+ffffffff   ___c_args__
+11812d50   ___cinit__
+00000000   ___data__
+00000000   ___edata__
+11813894   ___end__
+11811ca0   ___etext__
+ffffffff   ___pinit__
+11804000   ___text__
+118102a0   __addd
+1180ffa0   __addf
+11811980   __args_main
+11810dc0   __auto_init
+11812408   __cleanup_ptr
+118115a0   __cmpd
+11813380   __ctypes_
+118111e0   __cvtdf
+118117a0   __cvtfd
+1180f900   __divd
+11810540   __divf
+11810ea0   __divi
+11811280   __divli
+1180fac0   __divul
+1181240c   __dtors_ptr
+11811620   __fixdi
+11811320   __fixdu
+118116a0   __fixfi
+118113c0   __fixfu
+11811800   __fltid
+11811860   __fltif
+11811720   __fltlif
+118119c0   __fltud
+11811a00   __fltuf
+1180f320   __frcaddd
+1180f0e0   __frcdivd
+118107c0   __frcdivf
+118108c0   __frcmpyd
+11811a40   __frcmpyf
+11812538   __lock
+1180fc60   __mpyd
+11810680   __mpyf
+11811a80   __negd
+11811ac0   __negf
+11811c20   __nop
+11811b00   __remli
+11811b40   __remul
+118109c0   __round
+11812550   __stack
+11811b80   __subd
+11811bc0   __subf
+11811c40   __trunc
+1181253c   __unlock
+1180cb60   __wait
+1181382c   _a
+11811c60   _abort
+11811d70   _adbufH
+11811cd0   _adbufL
+11811d20   _adbufM
+1181385a   _adfifo_cnt
+11806eb8   _ascii2hex
+1180a844   _assemble_data
+1180ee20   _atan
+11810120   _atan2
+11811c80   _atof
+11810ac0   _atoi
+11810bc0   _atol
+11813830   _b
+11811ca0   _buff_cmd
+11813834   _c
+11812210   _c1
+118122b8   _c1_dvl
+11812244   _c2i
+1181224c   _c2ui
+11812248   _c2us
+1180b888   _c4touint
+1181380c   _cChkRec_dvl
+118137ea   _cChk_js
+11813808   _cChk_js_dvl
+118118c0   _c_int00
+118137e4   _casegga
+11813802   _casegga_dvl
+118137e6   _casevel
+11813804   _casevel_dvl
+11811920   _ceil
+1180d92c   _chip_erase
+1181380a   _ck_a_dvl
+1181380b   _ck_b_dvl
+11813848   _cnt_1ms
+11813844   _cnt_1s
+1181383c   _cnt_5ms
+11813840   _cnt_5s
+11813858   _cnt_cur
+11813859   _cnt_pre
+1180a1ec   _command_DRq
+1180a9ec   _command_link
+1180a2c4   _command_status
+1180ac98   _commu_link
+1180aa90   _commu_link1
+1180dd20   _cos
+118137e8   _crc_cnt_c1
+11813806   _crc_cnt_c1_dvl
+118137fc   _crc_err
+11812240   _crc_r
+11812238   _data_dchar
+11812230   _data_fchar
+1180da70   _data_polling
+11812250   _dvl_data
+118124b4   _errno
+11810cc0   _exit
+1180b1b8   _ext_int04
+1180b554   _ext_int05
+1180b5b0   _ext_int06
+1180b60c   _ext_int07
+118137e0   _fV_earth_Kn
+11811dd0   _faccytemp
+11811de0   _fgadata
+11811dc0   _fgyrotemp
+1181384c   _flag_5ms
+11813838   _flag_commu
+11813854   _flag_format
+1180d9b4   _flash_program
+1180dcc4   _flash_read
+1180e440   _fmod
+11813850   _frame_cnt
+1180fe00   _frexp
+11811f30   _g_dNavPn
+11811f08   _g_dSumPn
+11811f58   _g_fpnImu
+1181385e   _g_ucCnt_1ms
+11811e08   _g_ucUart1
+1181385c   _g_ucflag_1ms
+1181385d   _g_ucflag_5ms
+11813864   _g_uiSumimuCnt
+11813860   _g_uiTimer1ms_IMU
+11812540   _gp_num
+11813800   _gps_ptr_dvl
+1181385b   _gpstemp
+11806f58   _gvmov
+118137f6   _hgt_rms
+1180dbd8   _highEA_conv
+11811cc0   _info_Version
+11811cb8   _info_fpga
+118137f2   _lat_rms
+1180f720   _ldexp
+118137f4   _lon_rms
+1180aee0   _main
+11811460   _memcpy
+11810f80   _memset
+11811120   _modf
+118137f0   _msg_id
+118137fa   _msg_len
+118137f8   _msg_len_r
+1180eda0   _pUART_Recv
+1180ebf8   _pUART_Txmit
+11809e40   _parse_command
+1180a030   _parse_data
+1180ec78   _pfUART_Trans
+1180ed24   _pfUART_Txmit
+1180b8ac   _pntowa
+11813810   _pos_time
+1180c3f0   _read_MGZ310_Gyro
+1180c838   _read_MSA8000D_Acc
+11804020   _readnull_Com
+11811500   _renormd
+1180b668   _save_send_f32TD
+11812470   _sector_addr
+1180d860   _sector_erase
+11813852   _sframe_cnt
+1180e7a0   _sin
+1180c280   _spi1_xfer_simple
+1181387c   _spiRegs
+11813890   _spiRegs1
+1180f520   _sqrt
+1180d300   _strtod
+11811060   _tUART_Recv
+1180db04   _toggle_bit
+118137fe   _ucRecdvl_Com
+11803c20   _vector1
+11803d40   _vector10
+11803d60   _vector11
+11803d80   _vector12
+11803da0   _vector13
+11803dc0   _vector14
+11803de0   _vector15
+11803c40   _vector2
+11803c60   _vector3
+11803c80   _vector4
+11803ca0   _vector5
+11803cc0   _vector6
+11803ce0   _vector7
+11803d00   _vector8
+11803d20   _vector9
+11803c00   _vectors
+1180b940   _wait
+ffffffff   binit
+11812d50   cinit
+00000000   edata
+11813894   end
+11811ca0   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   .data
+00000000   ___data__
+00000000   ___edata__
+00000000   edata
+00000800   __STACK_SIZE
+11803c00   _vectors
+11803c20   _vector1
+11803c40   _vector2
+11803c60   _vector3
+11803c80   _vector4
+11803ca0   _vector5
+11803cc0   _vector6
+11803ce0   _vector7
+11803d00   _vector8
+11803d20   _vector9
+11803d40   _vector10
+11803d60   _vector11
+11803d80   _vector12
+11803da0   _vector13
+11803dc0   _vector14
+11803de0   _vector15
+11804000   .text
+11804000   _Init_GpsCom
+11804000   ___text__
+11804020   _readnull_Com
+11804078   _Read_Gps_PASHR
+11804fa8   _Read_Gps_BESTB
+11805884   _Read_Gps_WRJ
+11806548   _CRC32Value
+118065c8   _CalculateBlockCRC32
+11806670   _Init_DvlCom
+11806694   _Read_DVL
+11806eb8   _ascii2hex
+11806f58   _gvmov
+11807074   _Gps_pos_modify
+1180776c   _GPS_Course
+11807ac8   _XYZ_to_BLH
+11808030   _Speed_XYZ_to_BLH
+118082d4   _ReadGnssData
+11809e40   _parse_command
+1180a030   _parse_data
+1180a1ec   _command_DRq
+1180a2c4   _command_status
+1180a370   _Execute_UpLoad
+1180a5a0   _Execute_DownLoad
+1180a844   _assemble_data
+1180a9ec   _command_link
+1180aa90   _commu_link1
+1180ac98   _commu_link
+1180aee0   _main
+1180b1b8   _ext_int04
+1180b554   _ext_int05
+1180b5b0   _ext_int06
+1180b60c   _ext_int07
+1180b668   _save_send_f32TD
+1180b888   _c4touint
+1180b8ac   _pntowa
+1180b940   _wait
+1180bc2c   _FLASHSpiInit
+1180bdf4   _Atmel_Write_Wnable
+1180be0c   _Atmel_GlobalUnprotect
+1180bf30   _Atmel_Write
+1180c0c8   _Atmel_Read
+1180c140   _Atmel_Erase_Once
+1180c20c   _Atmel_Muti4K_Erase
+1180c280   _spi1_xfer_simple
+1180c334   _SpiInit
+1180c3f0   _read_MGZ310_Gyro
+1180c838   _read_MSA8000D_Acc
+1180cb60   __wait
+1180cb8c   _OMAPL137_GPIO_init
+1180cc94   _OMAPL137_SYSCFG_init
+1180cdb4   _OMAPL137_EMIFA_init
+1180cde4   _OMAPL137_PLL_init
+1180cef4   _OMAPL137_PSC_init
+1180d064   _OMAPL137_DSPINT_init
+1180d1c8   _OMAPL137_TIMER_init
+1180d298   _OMAPL137_DSPINT_OPENALL
+1180d2c0   _OMAPL137_DSPINT_CLOSEALL
+1180d2d8   _OMAPL137_PPSINT_OPEN
+1180d2ec   _OMAPL137_PPSINT_CLOSE
+1180d300   _strtod
+1180d860   _sector_erase
+1180d92c   _chip_erase
+1180d9b4   _flash_program
+1180da70   _data_polling
+1180db04   _toggle_bit
+1180dbd8   _highEA_conv
+1180dcc4   _flash_read
+1180dd20   _cos
+1180e0e0   _PSC0_lPSC_enable
+1180e1b4   _PSC0_lPSC_disable
+1180e28c   _PSC1_lPSC_enable
+1180e364   _PSC1_lPSC_disable
+1180e440   _fmod
+1180e7a0   _sin
+1180eb00   _UART_init
+1180eb84   _UART_FIFOCLR
+1180ebf8   _pUART_Txmit
+1180ec78   _pfUART_Trans
+1180ed24   _pfUART_Txmit
+1180eda0   _pUART_Recv
+1180ee20   _atan
+1180f0e0   __frcdivd
+1180f320   __frcaddd
+1180f520   _sqrt
+1180f720   _ldexp
+1180f900   __divd
+1180fac0   __divul
+1180fc60   __mpyd
+1180fe00   _frexp
+1180ffa0   __addf
+11810120   _atan2
+118102a0   __addd
+11810400   _EVMOMAPL137_GPIO_setDirection
+11810490   _EVMOMAPL137_GPIO_setOutput
+11810540   __divf
+11810680   __mpyf
+118107c0   __frcdivf
+118108c0   __frcmpyd
+118109c0   __round
+11810ac0   _atoi
+11810bc0   _atol
+11810cc0   _exit
+11810dc0   __auto_init
+11810ea0   __divi
+11810f80   _memset
+11811060   _tUART_Recv
+11811120   _modf
+118111e0   __cvtdf
+11811280   __divli
+11811320   __fixdu
+118113c0   __fixfu
+11811460   _memcpy
+11811500   _renormd
+118115a0   __cmpd
+11811620   __fixdi
+118116a0   __fixfi
+11811720   __fltlif
+118117a0   __cvtfd
+11811800   __fltid
+11811860   __fltif
+118118c0   _c_int00
+11811920   _ceil
+11811980   __args_main
+118119c0   __fltud
+11811a00   __fltuf
+11811a40   __frcmpyf
+11811a80   __negd
+11811ac0   __negf
+11811b00   __remli
+11811b40   __remul
+11811b80   __subd
+11811bc0   __subf
+11811c20   __nop
+11811c40   __trunc
+11811c60   C$$EXIT
+11811c60   _abort
+11811c80   _atof
+11811ca0   ___etext__
+11811ca0   _buff_cmd
+11811ca0   etext
+11811cb8   _info_fpga
+11811cc0   _info_Version
+11811cd0   _adbufL
+11811d20   _adbufM
+11811d70   _adbufH
+11811dc0   _fgyrotemp
+11811dd0   _faccytemp
+11811de0   _fgadata
+11811e08   _g_ucUart1
+11811f08   _g_dSumPn
+11811f30   _g_dNavPn
+11811f58   _g_fpnImu
+11811f88   _IMUData
+11811fb8   _GpsDat
+11812080   _DRamFConData
+11812210   _c1
+11812230   _data_fchar
+11812238   _data_dchar
+11812240   _crc_r
+11812244   _c2i
+11812248   _c2us
+1181224c   _c2ui
+11812250   _dvl_data
+118122b8   _c1_dvl
+11812408   __cleanup_ptr
+1181240c   __dtors_ptr
+11812470   _sector_addr
+118124b4   _errno
+11812538   __lock
+1181253c   __unlock
+11812540   _gp_num
+11812550   __stack
+11812d50   ___cinit__
+11812d50   cinit
+11813380   __ctypes_
+118137d0   $bss
+118137d0   .bss
+118137d0   ___bss__
+118137dc   _UTC
+118137e0   _fV_earth_Kn
+118137e4   _casegga
+118137e6   _casevel
+118137e8   _crc_cnt_c1
+118137ea   _cChk_js
+118137f0   _msg_id
+118137f2   _lat_rms
+118137f4   _lon_rms
+118137f6   _hgt_rms
+118137f8   _msg_len_r
+118137fa   _msg_len
+118137fc   _crc_err
+118137fe   _ucRecdvl_Com
+11813800   _gps_ptr_dvl
+11813802   _casegga_dvl
+11813804   _casevel_dvl
+11813806   _crc_cnt_c1_dvl
+11813808   _cChk_js_dvl
+1181380a   _ck_a_dvl
+1181380b   _ck_b_dvl
+1181380c   _cChkRec_dvl
+11813810   _pos_time
+1181382c   _a
+11813830   _b
+11813834   _c
+11813838   _flag_commu
+1181383c   _cnt_5ms
+11813840   _cnt_5s
+11813844   _cnt_1s
+11813848   _cnt_1ms
+1181384c   _flag_5ms
+11813850   _frame_cnt
+11813852   _sframe_cnt
+11813854   _flag_format
+11813858   _cnt_cur
+11813859   _cnt_pre
+1181385a   _adfifo_cnt
+1181385b   _gpstemp
+1181385c   _g_ucflag_1ms
+1181385d   _g_ucflag_5ms
+1181385e   _g_ucCnt_1ms
+11813860   _g_uiTimer1ms_IMU
+11813864   _g_uiSumimuCnt
+11813868   _P1
+1181386c   _P3
+11813870   _P5
+1181387c   _spiRegs
+11813890   _spiRegs1
+11813894   ___end__
+11813894   end
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[256 symbols]
